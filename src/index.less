@@ -1,0 +1,40 @@
+/* 全局样式 */
+
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.wrap {
+  max-width: 980px;
+  margin: 0 auto;
+}
+
+.main {
+  flex: 1;
+  background-color: #fff;
+  .wrap {
+    margin: 10px auto 20px;
+  }
+}
+
+.header {
+  padding: 0;
+  &.ant-layout-header {
+    background-color: #444;
+  }
+}
+
+.footer {
+  text-align: center;
+}
+
+@media all and (max-width:767px ) {
+  .main {
+    .wrap {
+      border: none;
+      margin: 0;
+    }
+  }
+}

@@ -1,0 +1,32 @@
+.home-wrap.wrap {
+  border: 1px solid @gray-4;
+}
+
+.topic-menu {
+  min-height: 500px;
+  text-align: center;
+  border-right: none;
+}
+
+.topic-list {
+  border-left: 1px solid @gray-4;
+  padding: 10px;
+  p {
+    margin: 0;
+    .time {
+      margin-left: 10px;
+    }
+  }
+}
+
+@media all and (max-width:767px ) {
+  .topic-menu {
+    min-height: 48px;
+    height: 48px;
+    display: flex;
+    text-align: center;
+    li {
+      flex: 1;
+    }
+  }
+}

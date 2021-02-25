@@ -1,0 +1,55 @@
+.user-wrap {
+  .user-info {
+    border: 1px solid @gray-4;
+    .avatar {
+      display: block;
+      margin: 10px auto;
+    }
+    .info {
+      line-height: 24px;
+      padding-bottom: 10px;
+      text-align: center;
+      span, time {
+        cursor: pointer;
+        color: @primary-color;
+      }
+    }
+  }
+  .user-list {
+    line-height: 32px;
+    .item {
+      position: relative;
+      .name {
+        margin: 0 10px 0 5px;
+      }
+      .time {
+        position: absolute;
+        top: 0;
+        right: 0;
+      }
+    }
+  }
+}
+
+@media all and (max-width:767px ) {
+  .user-wrap {
+    .user-list {
+      .item {
+        height: 60px;
+        .name {
+          margin: 0;
+          line-height: 18px;
+          position: absolute;
+          left: 36px;
+          top: 10px;
+        }
+        .title {
+          position: absolute;
+          top: 32px;
+          line-height: 18px;
+          left: 36px;
+        }
+      }
+    }
+  }
+}
